@@ -33,8 +33,8 @@
 <main>
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1 class="headline">Muhammad Haider Ali Khadim</h1>
-      <p class="subhead">Software Engineer • FAST NUCES</p>
+      <h1 id="name" class="headline">Muhammad Haider Ali Khadim</h1>
+      <p id="titleLine" class="subhead">Software Engineer • FAST NUCES</p>
       <div class="cta">
         <a class="btn primary" href="assets/Haider_Ali_CV.pdf" download>Download CV</a>
         <a class="btn" href="https://www.linkedin.com/in/haider-ali-40a999298" target="_blank" rel="noopener">LinkedIn</a>
@@ -48,12 +48,19 @@
 
   <section id="about" class="section">
     <h2>About</h2>
-    <p>I build reliable, user-focused software. I care about clean architecture, performance, and accessible experiences. I’m currently based in Pakistan and studied at FAST NUCES.</p>
+    <p id="aboutText">I build reliable, user-focused software. I care about clean architecture, performance, and accessible experiences. I’m currently based in Pakistan and studied at FAST NUCES.</p>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <object data="assets/Haider_Ali_CV.pdf" type="application/pdf" width="100%" height="600">
+      <p>Your browser can’t display the embedded PDF. <a href="assets/Haider_Ali_CV.pdf" target="_blank" rel="noopener">Open the CV</a>.</p>
+    </object>
   </section>
 
   <section id="skills" class="section">
     <h2>Skills</h2>
-    <div class="chip-grid">
+    <div id="skillsGrid" class="chip-grid">
       <span class="chip">Problem Solving</span>
       <span class="chip">Data Structures</span>
       <span class="chip">Algorithms</span>
@@ -94,7 +101,7 @@
 
   <section id="experience" class="section">
     <h2>Experience</h2>
-    <ul class="timeline">
+    <ul id="expTimeline" class="timeline">
       <li>
         <div class="time">Present</div>
         <div class="desc">Software engineering projects and problem solving.</div>
@@ -104,7 +111,7 @@
 
   <section id="education" class="section">
     <h2>Education</h2>
-    <ul class="timeline">
+    <ul id="eduTimeline" class="timeline">
       <li>
         <div class="time">FAST NUCES</div>
         <div class="desc">Bachelor studies with strong focus on computing fundamentals.</div>
@@ -119,6 +126,7 @@
       <a class="btn primary" href="https://www.linkedin.com/in/haider-ali-40a999298" target="_blank" rel="noopener">Message on LinkedIn</a>
       <a class="btn" href="https://github.com/HaiderAli52891" target="_blank" rel="noopener">Follow on GitHub</a>
     </div>
+    <p id="contactDetails"><span id="email"></span> <span id="phone"></span></p>
   </section>
 </main>
 
@@ -129,6 +137,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";</script>
 <script src="assets/script.js"></script>
 </body>
 </html>
